@@ -1,0 +1,13 @@
+body{
+    padding-top: 90px;
+    padding-left: 200px;
+    text-align: center;
+}
+.Calculator{
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    background-color: antiquewhite;
+    border: solid black 3px;
+    border-radius: 6px;
+}

@@ -1,0 +1,16 @@
+body{
+  display: inline-block;
+  padding: 10%;
+  margin-top: 30%;
+  padding: 10px;
+}
+
+button{
+  background-color: rgb(158, 158, 254);
+  border: none;
+  border-radius: 5%;
+}
+
+button:hover{
+  background-color: blueviolet;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asif Rahman's Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="profile.png"/>
+</head>
+<body>
+  
+<!-- ======================================================== -->
+  <!-- Navigation bar -->
+  <nav id="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-left">
+      <span id="aboveName">Asif Rahman</span>
+    </div>
+    <div class="nav-right">
+      <a href="#home" id="homeLink">Home</a>
+      <a href="#education" id="educationLink">Education</a>
+      <a href="#skill" id="skillLink">Skills</a>
+      <a href="#projects" id="projectsLink">Projects</a>
+      <a href="#contact" id="contactLink">Contact</a>
+    </div>
+  </nav>
+
+<!-- ======================================================== -->
+  <!-- Home Section -->
+  <section id="home">
+    <div id="me">
+      <div id="myIntro">
+        <h2>Hello</h2>
+        <h3 id="name">I'm Asif</h3>
+        <h1>Front-End Developer</h1>
+        <div id="hireResume">
+          <p id="hire">Let's Connect</p>
+          <p id="resume">
+            <a href="asifrahman_resume.pdf" target="_blank">My Resume</a>
+          </p>
+        </div>
+      </div>
+      <div id="myPhoto">
+        <img src="profile.png" alt="My Photo" width="150">
+      </div>
+    </div>
+  </section>
+
+<!-- ======================================================== -->
+  <!-- Skills Section (Mini Display) -->
+  <span id="showSkill">
+    <p>HTML5</p>
+    <p>CSS</p>
+    <p>JavaScript</p>
+  </span>
+
+<!-- ======================================================== -->
+  <!-- About Me -->
+  <div id="aboutMe">
+    <div id="ab">
+    <h3>About Me</h3>
+    <p>
+      Hello, I am a Software Engineering student at COMSATS University Islamabad. 
+      I have completed three semesters and have worked on several projects, gaining valuable 
+      technical and soft skills.
+    </p>
+    </div>
+    <div id="abc">
+      <h3>20+</h3>
+      <p>Completed Projects</p>
+    </div>
+    <div id="abcd">
+      <h3>5+</h3>
+      <p>Months Experience</p>
+    </div>
+  </div>
+
+<!--                      navigation sections                    -->
+
+  <!-- Education Section -->
+  <section id="education" style="display: none;">
+    <h2>Education</h2>
+    <div class="Education-details">
+      <h3>My Education Details</h3>
+      <p><strong>ICS - Intermediate Computer Science</strong></p>
+      <p>The Crescent School and College Mir Ali NWTD(Nov 2021 - Nov 2023)</p>
+      <p><strong>Grade: A+</strong></p>
+      <br>
+      <p><strong>Bachelor of Science - BS, Software Engineering</strong></p>
+      <p>COMSATS University Islamabad, Attock Campus(Feb 2024 - Feb 2028)</p>
+      <p><strong>CGPA:</strong> 2.79</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skill" style="display: none;">
+    <h2>Skills</h2>
+    <p><strong>Key Skills Acquired:</strong></p>
+    <ul>
+      <li><strong>Programming:</strong> Java (OOP), HTML, CSS</li>
+      <li><strong>Database:</strong> MySQL, MongoDB, JSON</li>
+      <li><strong>Networking:</strong> Cisco Packet Tracer, Wireshark</li>
+      <li><strong>Tools:</strong> NetBeans, VS Code</li>
+      <li><strong>Office:</strong> MS Word, Excel, Access</li>
+      <li><strong>Soft Skills:</strong> Problem-solving, teamwork, adaptability</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" style="display: none;">
+    <h2>Projects</h2>
+    <div id="projectsContainer" class="projects-grid">
+      <!-- Project cards will be injected here by JS -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="display: none;">
+    <h2>Contact Details</h2>
+    <ul>
+      <li><strong>Name:</strong> Asif Rahman</li>
+      <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/asifdawar</li>
+      <li><strong>GitHub:</strong> github.com/asifrhaman</li>
+      <li><strong>Email:</strong> asifdawar321@gmail.com</li>
+      <li><strong>Phone:</strong> +923208497960</li>
+      <li><strong>Address:</strong> District North Waziristan, Khyber Pakhtunkhwa</li>
+    </ul>
+  </section>
+
+<!-- =================================================== -->
+  <!-- Social Media -->
+  <div id="socialMedia">
+    <a href="https://github.com/asifrhaman" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/asifdawar" target="_blank"><i class="fa-brands fa-linkedin" style="color: rgb(126, 126, 255);"></i></a>
+    <a href="https://wa.me/923208497960" target="_blank"><i class="fa-brands fa-whatsapp" style="color:rgb(82, 255, 82);"></i></a>
+    <a href="mailto:asifdawar321@gmail.com"><i class="fa-solid fa-envelope" style="color: rgb(126, 126, 255);"></i></a>
+  </div>
+
+  <!-- JS -->
+  <script src="portfolio.js"></script>
+</body>
+</html>

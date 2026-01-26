@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 250px;
+    width: 250px;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: wheat;
+}
+/*------------------------------*/
+#reset{
+    background-color: blue;
+}
+#inc{
+    background-color: green;
+}
+#dec{
+    background-color: red;
+}
+
+#reset:hover{
+    background-color: grey;
+}
+#inc:hover{
+    background-color: grey;
+}
+#dec:hover{
+    background-color: grey;
+}
+/*-------------------------------*/
+.btn{
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+/* .btn:hover{
+    background-color: gray;
+} */
+#result{
+    padding-left: 90px;
+}

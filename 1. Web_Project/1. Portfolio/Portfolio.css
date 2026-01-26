@@ -1,0 +1,240 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(46, 48, 45);
+  color: white;
+  scroll-behavior: smooth;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+button, .btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: 'Lilita One', cursive;
+  color: #d15e11;
+}
+
+/* --------------------------------- Navigation bar --------------------------------- */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0px 4px 6px rgba(151, 208, 59, 0.7);
+}
+
+#aboveName {
+  font-family: Montserrat, cursive;
+  color: rgb(246, 255, 195);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-right a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: coral;
+}
+
+.hamburger{
+  display: none;
+  font-size: 24px;                                                                                                                                                      
+  cursor: pointer;
+}
+@media (max-width: 700px){
+.nav-right{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+.hamburger{
+  display: block;
+}
+#aboveName{
+  padding: 0px;
+}
+}
+
+/* -------------------------------- My Introduction section ---------------------- */
+#me {
+  display: flex;
+  align-items: center;            /* vertical alignment */
+  justify-content: space-between; /* text left, image right */
+  gap: 20px;
+  flex-wrap: wrap;           /* allows wrapping on smaller screens */
+}
+
+#myIntro {
+  flex: 1;       /* text takes available space */
+  margin: 0;
+  padding: 0;
+}
+#myIntro{
+  padding-left: 25px;
+}
+
+#myPhoto {
+  flex-shrink: 0;   /* image won’t shrink */
+  padding-right: 100px;
+}
+#resume{ 
+  margin-right: 10px; 
+  border: 2px solid rgb(255, 157, 0); 
+  padding: 10px; 
+  width: fit-content; 
+  box-shadow: 0px 4px 10px rgb(255, 157, 0); 
+  color: white;
+  font-weight:bold;
+} 
+#resume:hover { 
+  background-color: rgb(255, 157, 0); 
+  color: white; 
+  box-shadow: 0px 6px 15px rgba(194, 252, 2, 0.6); 
+}
+#hireResume{
+  display: flex;
+}
+#hire{ color:white; font-weight: bold; margin-right: 10px; background-color: rgb(255, 157, 0); border: 2px solid rgb(255, 157, 0); padding: 10px; width: fit-content; box-shadow: 0px 4px 10px rgba(194, 252, 2, 0.4); }
+#myPhoto img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 1px 5px 40px rgba(234, 200, 119, 0.7);
+}
+a {
+  text-decoration: none;
+}
+
+/*--------Resp--*/
+@media (max-width: 768px) {
+  #me {
+    flex-direction: column;  /* stack text and image */
+    align-items: center;     /* center content */
+    text-align: center;
+  }
+
+  #myPhoto img {
+    width: 120px;   /* smaller size for phones */
+  }
+}
+/*----------------------------------- Skill section ---------------------------- */
+#showSkill{
+  padding-left: 130px;
+  display: flex;
+  border: none;
+  background-color: rgba(112, 128, 88, 0.7);
+  box-shadow: 5px 5px 100px rgba(239, 255, 14, 0.7);
+}
+#showSkill p{
+  padding-left: 160px;
+}
+@media (max-width: 700px){
+  #showSkill, p{
+    padding: 0%;
+    display: inline-block;
+    margin: 0.5%;
+    padding-right: 0%;
+  }
+}
+/* ------------------------------------ About Me -----------------------------------*/
+#aboutMe{
+  display:flex;
+  padding-left: 200px;
+}
+#ab{
+  display: inline-block;
+  width: 400px;
+}
+#abc{
+  display: inline-block;
+  width: 200px;
+}
+#abcd{
+  display: inline-block;
+  width: 200px;
+}
+@media(max-width:700px){
+  #aboutMe{
+    display: inline;
+    padding-left: 0rem;
+  }
+  #aboutMe, h3{
+    display: inline;
+    left: 0;
+  }
+}
+/* ------------------------------------- Social Media ------------------------------- */
+#socialMedia{
+  display: inline-block;
+  padding: 23px;
+}
+/* ====================================================================================== */
+/* Projects cards */
+.project-card{
+  border: 2px solid orange;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 20px rgba(255, 200, 50, 0.5);
+}
+.project-card a{
+  color: coral;
+}
+/* Projects section grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.project-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 20px rgba(255, 200, 50, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 25px rgba(255, 200, 50, 0.8);
+}
+
+.project-card h3 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: coral;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #ffbf00;
+}

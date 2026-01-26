@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+//--------------------------------------------------------------------------
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)  --> false are default and we can remove false
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");  --> event propagation(bubbling)
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+   
+    
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>
+
+
+<!-- ________________________________________
+✅ The Goal of This Code
+This code allows you to:
+✔ Click on any image inside #images
+✔ Detect which image was clicked
+✔ Remove only that image’s container (its parent element)
+________________________________________
+✅ Step-by-Step Explanation
+1. document.querySelector('#images')...
+This selects the element with id:
+<div id="images"> ... </div>
+This div contains multiple images inside it.
+________________________________________
+2. .addEventListener('click', function(e) {...})
+You are listening for any click inside the #images container.
+Important:
+You are not adding a click to each image separately.
+You are adding a click to the entire parent — this is called:
+👉 Event Delegation
+(Meaning: The parent handles events for all children.)
+________________________________________
+3. console.log(e.target.tagName);
+e.target = the actual element you clicked.
+If you click on:
+<img id="pic1" />
+Then:
+•	e.target → the <img> element
+•	e.target.tagName → "IMG"
+This line helps you see which type of element was clicked.
+________________________________________
+4. if (e.target.tagName === 'IMG') { ... }
+This condition checks:
+👉 Was the clicked element an image?
+If yes → run the remove logic
+If no → ignore it
+This prevents removing a random <div> or text if clicked.
+________________________________________
+5. console.log(e.target.id);
+This prints the ID of the image you clicked.
+Example:
+If the <img> is:
+<img id="photo3">
+It prints:
+photo3
+________________________________________
+6. let removeIt = e.target.parentNode        <=============================
+This means:
+📌 Select the parent of the image
+Often your HTML looks like:
+<li><img id="p3" src="..."></li>
+So:
+•	e.target → <img>
+•	e.target.parentNode → <li>
+You want to remove the entire <li>, not only the image.
+________________________________________
+7. removeIt.remove()
+This removes the parent element from the page.
+So the <li> disappears, and with it, the image also disappears.
+✔ Only the clicked image’s container is removed
+✔ Other images remain untouched
+________________________________________
+🔥 Final Summary (Very Simple)
+•	Click event is added to parent #images
+•	If you click an image:
+o	Get which image was clicked
+o	Find the image’s parent element
+o	Remove that whole parent → image disappears
+✔ You used Event Delegation
+✔ You used e.target to know what was clicked
+✔ You used parentNode to remove the correct element
+________________________________________ --> 

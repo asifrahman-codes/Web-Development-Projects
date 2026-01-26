@@ -1,0 +1,53 @@
+body {
+  background-color: #f9e4e4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#container {
+  background-color: #dcdcdc;
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+input {
+  padding: 8px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+#win, #lose {
+  width: 350px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: none;
+  color: white;
+  line-height: 200px;
+}
+
+#win {
+  background-color: #00b894;
+}
+
+#lose {
+  background-color: #d63031;
+}
+
+#playAgain {
+  background-color: #0984e3;
+  margin-top: 10px;
+}
