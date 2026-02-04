@@ -15,7 +15,7 @@
 .showBalance span {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Space between Income and Expense */
+    gap: 50px; 
 }
 
 .addDetails form {
@@ -25,13 +25,13 @@
     justify-content: flex-start;
 }
 .addDetails input[name="description"] {
-    flex: 1 1 100%; /* Grow to 100% width */
+    flex: 1 1 100%; 
     padding: 10px;
 }
 .addDetails input[name="amount"],
 .addDetails input[name="date"],
 .addDetails select[name="category"] {
-    flex: 1; /* They will share the space equally */
+    flex: 1; 
     min-width: 150px;
     padding: 10px;
 }
@@ -42,7 +42,7 @@
     border-radius: 4px;
 }
 .addDetails button {
-    flex: 0 1 auto; /* Only takes as much space as needed */
+    flex: 0 1 auto;
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -57,7 +57,7 @@
     padding: 0;
 }
 
-/* This creates the 'Card' look for each list item */
+
 .transaction-item {
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border-left: 5px solid; /* Color will be set by the category */
+    border-left: 5px solid;
 }
 
 .income-border { border-left-color: #28a745; color: #28a745; }
