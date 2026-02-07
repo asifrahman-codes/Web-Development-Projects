@@ -1,5 +1,8 @@
-import ExpenseTracker from "./components/ExpenseTracker";
+import React from "react";
+import ExpenseTracker from "./pages/ExpenseTracker"; 
+
 function App() {
-    return <ExpenseTracker/>;
+  return <ExpenseTracker />;
 }
+
 export default App;
