@@ -1,0 +1,60 @@
+.product {
+  height: 500px;
+  width: 1200px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+}
+.searchBar h3 {
+  background-color: rgb(33,107,193);
+  border-radius: 8px 8px 0 0;
+  color: white;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  height: 40px;
+  padding-left: 15px;
+}
+.searchBox input, select, button { 
+  margin-left: 20px;
+  height: 30px;
+  border-radius: 5px;
+}
+.searchBar button {
+  background-color: rgb(84, 151, 84);
+  border: none;
+  border-radius: 5px;
+  width: 120px; /* Increased to fit text */
+  color: white;
+}
+.productRow {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: #f4f7fe;
+  margin-top: 15px;
+}
+.productRow p {
+  padding: 9px 150px 40px 55px;
+}
+.productTable {
+  padding: 15px;
+}
+
+.setting {
+  height: 500px;
+  width: 1200px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+}
+.setting h3 {
+  background-color: rgb(33,107,193);
+  border-radius: 8px 8px 0 0;
+  color: white;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  height: 40px;
+  padding-left: 15px;
+}

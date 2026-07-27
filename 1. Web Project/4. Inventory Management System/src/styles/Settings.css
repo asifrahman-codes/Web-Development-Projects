@@ -1,0 +1,24 @@
+.settings-page{
+    background-color:#f0f2f5; ;
+}
+.settings-container{
+    width: 95%;
+    height: 60px;
+    background-color: white;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding-left: 40px;
+}
+.setting-item{
+    width: 95%;
+    height: 60px;
+    background-color: white;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding-left: 40px;
+    margin-top: 7px;
+}
+.deleteAll button{
+    padding-right: 3px;
+    margin-left: 4px;
+}
